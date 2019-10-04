@@ -224,6 +224,8 @@ async function runner(script, payload, options, callback) {
         engines: runnerEngines
       };
       debug('run() with: %j', runnableScript);
+      console.log(`runnableScript: ${typeof(runnableScript)}`);
+      console.log(`runnableScript: ${runnableScript}`);
       run(runnableScript, ee, opts, runState, contextVars);
     };
 
